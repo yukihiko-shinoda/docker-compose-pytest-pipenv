@@ -1,0 +1,15 @@
+---
+version: '3.8'
+services:
+  pytest_pipenv:
+    # entrypoint: tar
+    # command:
+    #   - --no-same-owner
+    #   - -xz
+    #   - --strip-components
+    #   - "1"
+    build:
+      context: pytest_pipenv
+    image: futureys/pytest-pipenv
+    volumes:
+      - ./pipenv:/workspace
